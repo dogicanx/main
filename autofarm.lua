@@ -2,7 +2,7 @@ function af(bool) local players = game:GetService("Players")
     local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
     local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
     local client = players.LocalPlayer
-    bool == true
+    bool = true
     while bool == true do
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
