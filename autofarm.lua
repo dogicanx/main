@@ -1,8 +1,8 @@
-function af(bool) af local players = game:GetService("Players")
+function af(bool) local players = game:GetService("Players")
     local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
     local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
     local client = players.LocalPlayer
-    while af(true) then
+    while af(true) do
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
         bodyVelocity.Parent = client.Character.HumanoidRootPart
