@@ -23,11 +23,11 @@ if v.Name == "By Shaddow" then
     end
 end
 
-if theme == "Normal" then
-theme1 = Color3.fromRGB(32,32,32)
-theme2 = Color3.fromRGB(26,26,26)
-theme3 = Color3.fromRGB(176, 148, 255)
-print("Theme selected: "..theme)
+if theme == "normal" then
+    theme1 = Color3.fromRGB(44, 50, 84)
+    theme2 = Color3.fromRGB(22, 25, 42)
+    theme3 = Color3.fromRGB(0, 162, 255)
+    print("Theme selected: "..theme)
 elseif theme == "Reverse" then
     theme1 = Color3.fromRGB(26,26,26)
     theme2 = Color3.fromRGB(32,32,32)
@@ -59,7 +59,7 @@ elseif theme == "Crimson" then
     theme2 = Color3.fromRGB(26,26,26)
     theme3 = Color3.fromRGB(214, 40, 57)
     print("Theme selected: "..theme)
-elseif theme == "Deep Sea" then
+elseif theme == "deep sea" then
     theme1 = Color3.fromRGB(22, 25, 42)
     theme2 = Color3.fromRGB(44, 50, 84)
     theme3 = Color3.fromRGB(0, 162, 255)
@@ -103,7 +103,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0358817279, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 515, 0, 20)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "boat utilities"
+TextLabel.Text = "boatutil"
 TextLabel.TextColor3 = Color3.fromRGB(0, 162, 255)
 TextLabel.TextSize = 16.000
 
