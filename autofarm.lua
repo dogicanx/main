@@ -2,7 +2,6 @@ function af(bool) local players = game:GetService("Players")
     local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
     local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
     local client = players.LocalPlayer
-    while af(true) do
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
         bodyVelocity.Parent = client.Character.HumanoidRootPart
@@ -12,29 +11,27 @@ function af(bool) local players = game:GetService("Players")
                 repeat wait() until client.Character and client.Character:FindFirstChild("Humanoid")
             end
      
-            client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)
-            
-            if not af(true) then
-                client.Character.Humanoid.Health = 0
-                exit(0)
-            end
-            
-            if i == 1 then
-                wait(4)
-            else
-                wait(2)
-            end
-            
-            gold:FireServer()
-        end
-     
-        penguin:FireServer("PenguinCharacter")
-        client.Character:Remove()
-        repeat wait() 
-        until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
-        
+            client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)   
     end
-    local function stop() end if bool == true then start() else stop()
+    local function stop() end if bool == true then start() else client.Character.Humanoid.Health = 0
+        exit(0)
+    end
+    
+    if i == 1 then
+        wait(4)
+    else
+        wait(2)
+    end
+    
+    gold:FireServer()
+end
+
+penguin:FireServer("PenguinCharacter")
+client.Character:Remove()
+repeat wait() 
+until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
+ stop()
+ 
     end end
     
     -- to autofarm type af(true), to stop autofarm type af(false
