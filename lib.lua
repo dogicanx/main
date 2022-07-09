@@ -61,7 +61,7 @@ elseif theme == "Crimson" then
     print("Theme selected: "..theme)
 elseif theme == "Deep Sea" then
     theme1 = Color3.fromRGB(22, 25, 42)
-    theme2 = Color3.fromRGB(rgb(44, 50, 84))
+    theme2 = Color3.fromRGB((44, 50, 84))
     theme3 = Color3.fromRGB(0, 162, 255)
     print("Theme selected: "..theme)
 end
@@ -103,7 +103,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0358817279, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 515, 0, 20)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "boat"
+TextLabel.Text = "boat utilities"
 TextLabel.TextColor3 = Color3.fromRGB(0, 162, 255)
 TextLabel.TextSize = 16.000
 
