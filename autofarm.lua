@@ -14,7 +14,7 @@ function af(bool) local players = game:GetService("Players")
      
             client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)
             
-            if bool == false then stop()
+            if not af(true) then
                 client.Character.Humanoid.Health = 0
                 exit(0)
             end
@@ -34,6 +34,7 @@ function af(bool) local players = game:GetService("Players")
         until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
         
     end
-    local function stop() end if bool == true then start() else stop() end end
+    local function stop() end if bool == true then start() else stop()
+    end end
     
     -- to autofarm type af(true), to stop autofarm type af(false
