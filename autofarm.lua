@@ -1,9 +1,10 @@
-function af(bool) local players = game:GetService("Players")
+function af(bool) af local players = game:GetService("Players")
     local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
     local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
     local client = players.LocalPlayer
-    bool = true
-    while bool == true do
+    
+    af(true)
+    while af(true) then
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
         bodyVelocity.Parent = client.Character.HumanoidRootPart
@@ -15,7 +16,7 @@ function af(bool) local players = game:GetService("Players")
      
             client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)
             
-            if not _bool == true then
+            if bool == false then stop()
                 client.Character.Humanoid.Health = 0
                 exit(0)
             end
