@@ -5,6 +5,7 @@ function af(bool) local players = game:GetService("Players")
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
         bodyVelocity.Parent = client.Character.HumanoidRootPart
+    if  bool == true then
         
         for i = 1, 9 do
             if not client.Character or not client.Character:FindFirstChild("Humanoid") then
@@ -27,8 +28,9 @@ function af(bool) local players = game:GetService("Players")
  
     penguin:FireServer("PenguinCharacter")
     client.Character:Remove()
- repeat wait() 
+ repeat wait()
  until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
      local function stop() end if bool == true then start() else stop() end end end
+ end
     
     -- to autofarm type af(true), to stop autofarm type af(false
