@@ -2,8 +2,6 @@ function af(bool) af local players = game:GetService("Players")
     local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
     local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
     local client = players.LocalPlayer
-    
-    af(true)
     while af(true) then
         local bodyVelocity = Instance.new("BodyVelocity")
         bodyVelocity.Velocity = Vector3.new(0, -4, 0)
