@@ -117,7 +117,7 @@ Toggle.Size = UDim2.new(0, 15, 0, 16)
 Toggle.ImageColor3 = Color3.fromRGB(255, 255, 255)
 Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=4731371541"
 
-Main.Name = "Boat"
+Main.Name = "Main"
 Main.Parent = Top
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
@@ -129,9 +129,6 @@ Main.ImageColor3 = theme2
 Main.ScaleType = Enum.ScaleType.Slice
 Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.030
-Main.Text = BOAT
-Main.TextColor3 = Color3.fromRGB(0, 162, 255)
-Main.TextSize = 14.000
 
 Tabs.Name = "Tabs"
 Tabs.Parent = TabContainer
