@@ -23,9 +23,11 @@ function af(bool) local players = game:GetService("Players")
  
     penguin:FireServer("PenguinCharacter")
     client.Character:Remove()
- 
-    repeat wait() 
-    until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
-     local function stop() end if bool == true then start() else stop() end end
+ repeat wait() 
+ until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
+
+     local function stop() end if bool == true then start() else if not _G.Busy then
+            client.Character.Humanoid.Health = 0
+            exit(0) stop()  end end end
     
     -- to autofarm type af(true), to stop autofarm type af(false
