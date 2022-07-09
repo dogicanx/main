@@ -23,8 +23,8 @@ if v.Name == "By Shaddow" then
     end
 end
 
-if theme == "normal" then
-    theme1 = Color3.fromRGB(44, 50, 84)
+if theme == "original" then
+    theme1 = Color3.fromRGB(22, 25, 42)
     theme2 = Color3.fromRGB(22, 25, 42)
     theme3 = Color3.fromRGB(0, 162, 255)
     print("Theme selected: "..theme)
