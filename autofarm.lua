@@ -14,6 +14,7 @@ function af(bool) local players = game:GetService("Players")
         if not bool == true then
             client.Character.Humanoid.Health = 0
             exit(0)
+            local function stop()   
         end
       if i == 1 then
             wait(4)
@@ -29,6 +30,6 @@ function af(bool) local players = game:GetService("Players")
  repeat wait() 
  until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
 
-     local function stop() end if bool == true then start() else client.Character.Humanoid.Health = 0 exit(0) stop()  end end
+     local function stop() end if bool == true then start() else stop() end end end
     
     -- to autofarm type af(true), to stop autofarm type af(false
