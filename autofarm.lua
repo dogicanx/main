@@ -13,24 +13,7 @@ function af(bool) local players = game:GetService("Players")
      
             client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)   
     end
-    local function stop() end if bool == true then start() else client.Character.Humanoid.Health = 0
-        exit(0)
-    end
-    
-    if i == 1 then
-        wait(4)
-    else
-        wait(2)
-    end
-    
-    gold:FireServer()
-end
-
-penguin:FireServer("PenguinCharacter")
-client.Character:Remove()
-repeat wait() 
-until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
- stop()
+    local function stop() end if bool == true then start() else stop()
  
     end end
     
