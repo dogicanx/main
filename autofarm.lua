@@ -29,8 +29,6 @@ function af(bool) local players = game:GetService("Players")
     client.Character:Remove()
  repeat wait() 
  until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
- end
-
-     local function stop() end if bool == true then start() else stop() end end 
+     local function stop() end if bool == true then start() else stop() end end end
     
     -- to autofarm type af(true), to stop autofarm type af(false
