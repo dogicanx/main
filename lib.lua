@@ -102,10 +102,10 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0358817279, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 515, 0, 20)
-TextLabel.Font = Enum.Font.Code
-TextLabel.Text = name
+TextLabel.Font = Enum.Font.Bangers
+TextLabel.Text = "boat"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
+TextLabel.TextSize = 36.000
 
 Toggle.Name = "Toggle"
 Toggle.Parent = Top
