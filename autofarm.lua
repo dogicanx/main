@@ -1,4 +1,4 @@
-local players = game:GetService("Players")
+function af(bool) local players = game:GetService("Players")
 local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
 local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
 local client = players.LocalPlayer
@@ -32,8 +32,10 @@ while _G.Busy do
  
     penguin:FireServer("PenguinCharacter")
     client.Character:Remove()
- 
     repeat wait() 
     until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
     
 end
+local function stop() end if bool == true then start() else stop() end end
+
+-- to autofarm type af(true), to stop autofarm type af(false
