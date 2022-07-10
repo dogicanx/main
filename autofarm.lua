@@ -24,7 +24,6 @@ local client = players.LocalPlayer
         gold:FireServer()
     end
 end
-end
 game.Players.LocalPlayer.CharacterAdded:Connect(function()
     wait(4)
     if AutoFarm ==  true then
