@@ -1,5 +1,5 @@
 Notification:Notify(
-    {Title = "grav gun loaded", Description = "Q & E - bring closer and further
+    {Title = "telekinesis", Description = "Q & E - bring closer and further
      R - Rotates Block
      T - Tilts Block
      Y - Throws Block"},
