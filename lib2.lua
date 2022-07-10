@@ -103,7 +103,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0358817279, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 515, 0, 20)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "misc
+TextLabel.Text = "boat misc"
 TextLabel.TextColor3 = Color3.fromRGB(0, 162, 255)
 TextLabel.TextSize = 15.000
 
