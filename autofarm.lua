@@ -1,40 +1,50 @@
-local AutoFarm  = false
-function Repeat1()
-    local players = game:GetService("Players")
-local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
-local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
-local client = players.LocalPlayer
-    local bodyVelocity = Instance.new("BodyVelocity")
-    bodyVelocity.Velocity = Vector3.new(0, -4, 0)
-    bodyVelocity.Parent = client.Character.HumanoidRootPart
-    
-    for i = 1, 9 do
-        if not client.Character or not client.Character:FindFirstChild("Humanoid") then
-            repeat wait() until client.Character and client.Character:FindFirstChild("Humanoid")
-        end
- 
-        client.Character.HumanoidRootPart.CFrame = stages["CaveStage"..i].DarknessPart.CFrame wait(0.1)
-        
-        if i == 1 then
-            wait(4)
-        else
-            wait(2)
-        end
-        
-        gold:FireServer()
+function autofarm(bool)
+    --script here
+    local args = { [1] = true } workspace.RefreshLocks:FireServer(unpack(args))
+    bool = false
+    game:GetService('RunService').Stepped:connect(function()
+    if bool == true then
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
     end
-end
-game.Players.LocalPlayer.CharacterAdded:Connect(function()
-    wait(4)
-    if AutoFarm ==  true then
-        Repeat1()
+    end)
+    bool = not bool
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    local Character = game:GetService('Players').LocalPlayer.Character
+    wait(3)
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-69.0208588, 108.308792, 644.431091))
+    wait(1)
+    local CFrameEnd = CFrame.new(-41.7870445, 77.1494141, 8675.35059) -- Place your coords in here
+    local Time = 33-- Time in seconds
+    local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait(X) --- Completes, no need for additional wait time
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-63.2413521, -357.34967, 8819.09277)) wait(0.5)
+    local CFrameEnd = CFrame.new(-55.8801956, -361.116333, 9488.1377) -- Place your coords in here
+    local Time = 0 -- Time in seconds
+    local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait(X)
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    wait(3)
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-69.0208588, 108.308792, 644.431091))
+    wait(1)
+    local CFrameEnd = CFrame.new(-41.7870445, 77.1494141, 8675.35059) -- Place your coords in here
+    local Time = 33-- Time in seconds
+    local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait(X) --- Completes, no need for additional wait time
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-63.2413521, -357.34967, 8819.09277)) wait(0.5)
+    local CFrameEnd = CFrame.new(-55.8801956, -361.116333, 9488.1377) -- Place your coords in here
+    local Time = 0 -- Time in seconds
+    local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait(X)
+    end)
+    for i=1, math.huge do
+    wait(200)
+    game.Players.LocalPlayer.Character.Head:Destroy()
+    if bool == true then
+    Repeat1()
     end
-end)
-AutoFarmButtons["1-1"].Button.MouseButton1Down:connect(function()
-    if AutoFarm ==  false then
-        AutoFarm =  true
-        game.Players.LocalPlayer.Character:FindFirstChild("Head"):Destroy()
-    else
-        AutoFarm = false
     end
-end)
+    local function stop() end if bool == true then repeat1() else stop() end end
