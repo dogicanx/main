@@ -45,5 +45,5 @@ while _G.Busy do
     until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
     
 end
-local function stop() end if bool == true then _g.busy = true else _g.busy = false then stop() end end
+local function stop() end if bool == true then _g.busy = true else _g.busy = false  stop() end end
 ---------
